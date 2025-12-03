@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const posts = import.meta.glob("./posts/*.md", { eager: true });
+---
+
+<BaseLayout>
+  <h1>Tour Posts</h1>
+
+  <ul>
+    {Object.entries(posts).map(([path, post]) => {
+      const slug = path.split("/").pop().replace(".md", "");
+
+      return (
+        <li>
+          <a href={`/posts/${slug}/`}>
+            {post.frontmatter.title}
+          </a>
+          — {post.frontmatter.pubDate}
+        </li>
+      );
+    })}
+  </ul>
+</BaseLayout>

@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const {
+  title,
+  author,
+  description,
+  image,
+  pubDate,
+  tags
+} = Astro.props;
+---
+<BaseLayout>
+  <article>
+    <header>
+      <h1>{title}</h1>
+
+      {description && <p>{description}</p>}
+
+      <p>
+        {author && <>By {author}</>}  
+        {pubDate && <> — {pubDate}</>}
+      </p>
+
+      {tags && tags.length > 0 && (
+        <p>
+          Tags:
+          {tags.map(tag => <span> {tag} </span>)}
+        </p>
+      )}
+
+      {image?.url && (
+        <img src={image.url} alt={image.alt || title} />
+      )}
+    </header>
+
+    <section>
+      <slot />
+    </section>
+  </article>
+</BaseLayout>

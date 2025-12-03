@@ -1,38 +1,38 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>About</title>
-	</head>
-	<body>
-	<section>
-        <h2>Career Highlights</h2>
-        <p>At age 12, Birdy won the UK talent competition <em>Open Mic UK</em>, making her one of the youngest winners.
-        Her breakout came in 2011, when at 14 she released a cover of Skinny Love (originally by Bon Iver), which became a hit across Europe.  
-        Since then she has released several studio albums including
-        </p>
-        <ul>
-            <li><em>Birdy</em> (2011) — debut album with covers and original songs.</li>
-            <li><em>Fire Within</em> (2013) — her second album showing more original work.</li>
-            <li><em>Beautiful Lies</em> (2016) — explores growth and change.</li>
-            <li><em>Young Heart</em> (2021) — more mature songwriting.</li>
-            <li><em>Portraits</em> (2023) — her latest studio album as of 2023.</li>
-        </ul>
-        <p>Her music has featured in major film soundtracks, and she has become known for her emotive voice, piano-driven arrangements and thoughtful lyrics.  
-        </p>
-    </section>
+<BaseLayout>
 
-    <section>
-        <h2>Style & Influences</h2>
-        <p>Birdy's style blends indie-folk, pop and piano-led arrangements.
-        Because of her musical upbringing and early classical influences, she often brings a lush, cinematic feel to her songs.
-      </p>
-    </section>
-</body>
-</html>
+  <section>
+    <h2>Career Highlights</h2>
+    <p>
+      At age 12, Birdy won the UK talent competition <em>Open Mic UK</em>, making her one of the youngest winners.
+      Her breakout came in 2011, when at 14 she released a cover of Skinny Love (originally by Bon Iver), which became a hit across Europe.
+      Since then she has released several studio albums including
+    </p>
+
+    <ul>
+      <li><em>Birdy</em> (2011) — debut album with covers and original songs.</li>
+      <li><em>Fire Within</em> (2013) — her second album showing more original work.</li>
+      <li><em>Beautiful Lies</em> (2016) — explores growth and change.</li>
+      <li><em>Young Heart</em> (2021) — more mature songwriting.</li>
+      <li><em>Portraits</em> (2023) — her latest studio album as of 2023.</li>
+    </ul>
+
+    <p>
+      Her music has featured in major film soundtracks, and she has become known for her emotive voice,
+      piano-driven arrangements and thoughtful lyrics.
+    </p>
+  </section>
+
+  <section>
+    <h2>Style & Influences</h2>
+    <p>
+      Birdy's style blends indie-folk, pop and piano-led arrangements.
+      Because of her musical upbringing and early classical influences,
+      she often brings a lush, cinematic feel to her songs.
+    </p>
+  </section>
+
+</BaseLayout>
