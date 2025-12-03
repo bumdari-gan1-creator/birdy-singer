@@ -25,12 +25,9 @@ const base = import.meta.env.BASE_URL;
         )}
       </header>
 
-      {image && image.url && (
-        <img
-        src={`${base.replace(/\/$/, '')}${image.url}`} 
-        alt={image.alt || title}
-        />
-      )}
+      {image?.url && (
+  <img src={image.url} alt={image.alt || title} />
+)}
 
       <section class="post-body">
         <slot />
