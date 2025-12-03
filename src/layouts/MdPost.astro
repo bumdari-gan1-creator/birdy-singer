@@ -1,41 +1,99 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseLayout from "./BaseLayout.astro";
 
-const {
-  title,
-  author,
-  description,
-  image,
-  pubDate,
-  tags
-} = Astro.props;
+const { frontmatter, url } = Astro.props;
+const { title, location, author, description, image, pubDate, tags } = frontmatter;
 ---
-<BaseLayout>
-  <article>
-    <header>
-      <h1>{title}</h1>
 
-      {description && <p>{description}</p>}
+<BaseLayout title={title}>
+  <main class="post-page">
+    <article>
+      <header class="post-header">
+         <h1>{title}</h1>
+        <p class="post-meta">
+          <p>Published by: {author && <> {author}</>}</p>
+          {pubDate && <time datetime={pubDate}>{pubDate}</time>}
+        </p>
 
-      <p>
-        {author && <>By {author}</>}  
-        {pubDate && <> — {pubDate}</>}
-      </p>
+       
+
+        {description && (
+          <p class="post-desc">
+            {description}
+          </p>
+        )}
+      </header>
+
+      {image && image.url && (
+        <img
+          src={image.url}
+          alt={image.alt || title}
+          class="post-hero"
+        />
+      )}
+
+      <section class="post-body">
+        <slot />
+      </section>
 
       {tags && tags.length > 0 && (
-        <p>
-          Tags:
-          {tags.map(tag => <span> {tag} </span>)}
-        </p>
+        <ul class="tag-list">
+          {tags.map((tag) => (
+            <li class="tag">{tag}</li>
+          ))}
+        </ul>
       )}
-
-      {image?.url && (
-        <img src={image.url} alt={image.alt || title} />
-      )}
-    </header>
-
-    <section>
-      <slot />
-    </section>
-  </article>
+    </article>
+  </main>
 </BaseLayout>
+
+<style>
+  .post-page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+  }
+
+  .post-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .post-meta {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-desc {
+    margin-top: 0.5rem;
+    color: #555;
+  }
+
+  .post-hero {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    margin: 1rem 0 2rem;
+  }
+
+  .post-body {
+    line-height: 1.7;
+  }
+
+  .tag-list {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    font-size: 0.8rem;
+    background: #f1f1f1;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+  }
+</style>

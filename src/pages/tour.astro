@@ -1,23 +1,113 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const posts = import.meta.glob("./posts/*.md", { eager: true });
+const posts = await Astro.glob("./posts/*.md");
+
 ---
 
-<BaseLayout>
-  <h1>Tour Posts</h1>
+<BaseLayout title="Tour Blog">
+  <main class="blog-list">
+    <h1>Tour Blog</h1>
 
-  <ul>
-    {Object.entries(posts).map(([path, post]) => {
-      const slug = path.split("/").pop().replace(".md", "");
+    <div class="posts-grid">
+      {posts.map((post) => {
+        const { title, description, image, pubDate, author } = post.frontmatter;
 
-      return (
-        <li>
-          <a href={`/posts/${slug}/`}>
-            {post.frontmatter.title}
-          </a>
-          — {post.frontmatter.pubDate}
-        </li>
-      );
-    })}
-  </ul>
+        return (
+          <article class="post-card">
+            {image && image.url && (
+              <a href={post.url}>
+                <img
+                  src={image.url}
+                  alt={image.alt || title}
+                  class="post-thumb"
+                />
+              </a>
+            )}
+
+            <div class="post-content">
+              <h2>
+                <a href={post.url}>{title}</a>
+              </h2>
+
+              <p class="post-meta">
+                {pubDate && <time datetime={pubDate}>{pubDate}</time>}
+                {author && <> · {author}</>}
+              </p>
+
+              {description && (
+                <p class="post-desc">
+                  {description}
+                </p>
+              )}
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  </main>
 </BaseLayout>
+
+<style>
+  .blog-list {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem;
+  }
+
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .post-card {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 1px solid #e2e2e2;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-thumb {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .post-content {
+    padding: 1rem;
+  }
+
+  .post-meta {
+    font-size: 0.85rem;
+    color: #777;
+    margin: 0.25rem 0 0.5rem;
+  }
+
+  .post-desc {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.25rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:hover h2 {
+    text-decoration: underline;
+  }
+</style>

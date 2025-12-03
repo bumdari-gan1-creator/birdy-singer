@@ -1,18 +1,21 @@
 ---
 layout: ../../layouts/MdPost.astro
-title: "The First Tour"
+title: "Birdy Live at House of Blues Cleveland"
+location: "House of Blues, Cleveland, Ohio, USA"
 author: "Bumdari Gan-erdene"
-description: "An example of changing"
+description: "A club show on her 2014 North American run"
 image:
-  url: "/images/birdy-tour-1.jpg"
+  url:  "images/7012278.jpeg"
   alt: "Birdy performing live on tour"
-pubDate: "2025-01-05"
+pubDate: "2014-04-24"
 tags:
   - tour
-  - birdy
+  - birdy 
   - live
 ---
-Birdy’s first major tour marked an important milestone in her early career, giving fans an opportunity to hear her music in a more intimate and emotional setting. Although she became widely recognized through her breakout cover of “Skinny Love,” seeing her perform live revealed a deeper side of her artistry. Her concerts often featured gentle, piano-led songs mixed with more uplifting arrangements, showing the range of her musical expression. Audiences appreciated the sincerity in her voice and the quiet confidence she brought to the stage.
+## A Standout Night in Cleveland
+ 
+On 24 April 2014, concert listings show a performance titled “Birdy – House of Blues Cleveland,” considered one of the standout nights of her US spring run. By this time Birdy was already performing songs from Fire Within around the world, and fans recall that in the intimate club setting of Cleveland her folk-pop songs and quiet piano ballads felt even closer and more personal.
 
-Many fans described her performances as calming yet powerful, noting how each song carried a sense of vulnerability. Live instrumentation added warmth to her sound, making certain songs feel even richer than their studio versions. These early tours laid a strong foundation for Birdy’s future as a respected live performer and helped shape her connection with listeners around the world.
+Club shows in cities like Cleveland played an important role in helping Birdy build a loyal fanbase in the US music market. When she later returned to North America with her own Beautiful Lies Tour, performing in larger theatres and at festivals, these earlier club nights were remembered as her “first steps,” and the experience she gained on the 2013–2014 tours became the main foundation for developing her live style into something more cinematic and dramatic.
 

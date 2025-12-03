@@ -1,19 +1,22 @@
 ---
 layout: ../../layouts/MdPost.astro
-
-title: "The First Tour"
+title: "Opening Night in Brisbane"
+location: "Palais Theatre, St Kilda, Melbourne, Australia"
 author: "Bumdari Gan-erdene"
-description: "An example of changing"
+description: "Birdy’s first Australian headline show on her 2013 tour"
 image:
-  url:  "/public/images/public/images/birdy-tour-1.jpg"
+  url:  "images/birdy-tour-1.jpg"
   alt: "Birdy performing live on tour"
-pubDate: "2025-01-05"
+pubDate: "2013-04-03"
 tags:
   - tour
-  - birdy
+  - birdy 
   - live
 ---
-Birdy’s first major tour marked an important milestone in her early career, giving fans an opportunity to hear her music in a more intimate and emotional setting. Although she became widely recognized through her breakout cover of “Skinny Love,” seeing her perform live revealed a deeper side of her artistry. Her concerts often featured gentle, piano-led songs mixed with more uplifting arrangements, showing the range of her musical expression. Audiences appreciated the sincerity in her voice and the quiet confidence she brought to the stage.
+## Australian Tour Begins in Brisbane
 
-Many fans described her performances as calming yet powerful, noting how each song carried a sense of vulnerability. Live instrumentation added warmth to her sound, making certain songs feel even richer than their studio versions. These early tours laid a strong foundation for Birdy’s future as a respected live performer and helped shape her connection with listeners around the world.
+Birdy’s first major Australian tour kicked off at The Tivoli in Brisbane on 3 April 2013. The run of dates was presented by Live Nation and followed the huge local success of her self-titled debut album and her multi-platinum cover of “Skinny Love.” 
+Starting in a classic theatre-style venue like The Tivoli set the tone for the whole tour: seated but intimate rooms where her piano-driven songs and delicate vocals could really be heard. Fans at these early shows were among the first in Australia to hear a mix of album favourites alongside soundtrack songs such as “Just a Game.” 
+
+After Brisbane, the tour moved west to Perth and then across the country, but that opening night was important in proving she could carry a full headline set so far from home. It also helped confirm Australia as one of Birdy’s strongest overseas markets, something reflected in her ARIA chart success and repeated returns to play theatres in later years. 
 

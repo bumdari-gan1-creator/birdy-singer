@@ -1,18 +1,23 @@
 ---
 layout: ../../layouts/MdPost.astro
-title: "The First Tour"
+title: "House of Blues Orlando – Head or Heart Tour"
+location: "House of Blues, Orlando, Florida, USA"
 author: "Bumdari Gan-erdene"
-description: "An example of changing"
+description: "Birdy supporting Christina Perri on the North American Head or Heart Tour"
 image:
-  url: "/images/birdy-tour-1.jpg"
+  url:  "images/BirdyPhotoByRosOGorman_5.jpg"
   alt: "Birdy performing live on tour"
-pubDate: "2025-01-05"
+pubDate: "2014-05-02"
 tags:
   - tour
-  - birdy
+  - birdy 
   - live
 ---
-Birdy’s first major tour marked an important milestone in her early career, giving fans an opportunity to hear her music in a more intimate and emotional setting. Although she became widely recognized through her breakout cover of “Skinny Love,” seeing her perform live revealed a deeper side of her artistry. Her concerts often featured gentle, piano-led songs mixed with more uplifting arrangements, showing the range of her musical expression. Audiences appreciated the sincerity in her voice and the quiet confidence she brought to the stage.
+## Joining the Head or Heart Tour in Orlando
+ 
+In the spring of 2014, Birdy joined Christina Perri’s Head or Heart Tour in the United States as the opening act, travelling through small theatres and clubs across the country. The House of Blues concert in Orlando took place on 2 May 2014 and is listed as one of the official dates on Perri’s Head or Heart tour schedule. There, Birdy played a short but striking set featuring her Fire Within songs like “Wings” and “Words as Weapons,” alongside earlier hits such as “Skinny Love,” gently easing the audience into a calm, reflective mood before the main show began.
 
-Many fans described her performances as calming yet powerful, noting how each song carried a sense of vulnerability. Live instrumentation added warmth to her sound, making certain songs feel even richer than their studio versions. These early tours laid a strong foundation for Birdy’s future as a respected live performer and helped shape her connection with listeners around the world.
+### What happened after this
+
+Throughout the Head or Heart Tour she performed a similar set in comparable nightclubs and theatres in cities like Atlanta, Houston, Dallas, San Francisco and Seattle, which helped introduce her to a much wider American audience. Even though she was a support or opening artist on this run, reviewers described Birdy’s set as quietly beginning but reaching a powerful, emotional climax by the end. Many see this experience as something that helped her step confidently into larger-scale headline tours for her own album Beautiful Lies (2016).
 
