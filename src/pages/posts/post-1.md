@@ -5,7 +5,7 @@ location: "Palais Theatre, St Kilda, Melbourne, Australia"
 author: "Bumdari Gan-erdene"
 description: "Birdy’s first Australian headline show on her 2013 tour"
 image:
-  url:  "images/birdy-tour-1.jpg"
+  url:  "/images/birdy-tour-1.jpg"
   alt: "Birdy performing live on tour"
 pubDate: "2013-04-03"
 tags:

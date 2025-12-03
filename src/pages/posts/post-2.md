@@ -5,7 +5,7 @@ location: "House of Blues, Cleveland, Ohio, USA"
 author: "Bumdari Gan-erdene"
 description: "A club show on her 2014 North American run"
 image:
-  url:  "images/7012278.jpeg"
+  url:  "/images/7012278.jpeg"
   alt: "Birdy performing live on tour"
 pubDate: "2014-04-24"
 tags:

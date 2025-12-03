@@ -3,6 +3,7 @@ import BaseLayout from "./BaseLayout.astro";
 
 const { frontmatter, url } = Astro.props;
 const { title, location, author, description, image, pubDate, tags } = frontmatter;
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title={title}>
@@ -26,9 +27,8 @@ const { title, location, author, description, image, pubDate, tags } = frontmatt
 
       {image && image.url && (
         <img
-          src={image.url}
-          alt={image.alt || title}
-          class="post-hero"
+        src={`${base.replace(/\/$/, '')}${image.url}`} 
+        alt={image.alt || title}
         />
       )}
 

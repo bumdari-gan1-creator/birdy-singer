@@ -5,7 +5,7 @@ location: "House of Blues, Orlando, Florida, USA"
 author: "Bumdari Gan-erdene"
 description: "Birdy supporting Christina Perri on the North American Head or Heart Tour"
 image:
-  url:  "images/BirdyPhotoByRosOGorman_5.jpg"
+  url:  "/images/BirdyPhotoByRosOGorman_5.jpg"
   alt: "Birdy performing live on tour"
 pubDate: "2014-05-02"
 tags:
