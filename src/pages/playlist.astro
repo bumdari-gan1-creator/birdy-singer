@@ -4,8 +4,8 @@ const pageTitle = "My Playlist";
 ---
 
 <BaseLayout title={pageTitle}>
-  <section class="playlist">
-    <div class="playlist-card">
+  <main class="page">
+    <section class="section-card playlist-card">
       <h1 class="playlist-title">{pageTitle}</h1>
 
       <div class="playlist-layout">
@@ -49,8 +49,8 @@ const pageTitle = "My Playlist";
           </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <script is:inline>
     let songs = [
@@ -122,171 +122,4 @@ const pageTitle = "My Playlist";
       renderPlaylist();
     });
   </script>
-
-  <style>
-   
-    .playlist-card {
-      max-width: 80vw;
-      margin: 2rem auto 3rem;
-      padding:2rem;
-      background: #f7f7f7;
-      border-radius: 1rem;
-      line-height: 1.7;
-    }
-
-    .playlist-title {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
-    }
-
-    
-    .playlist-layout {
-      display: flex;
-      gap: 2rem;
-      align-items: flex-start;
-      flex-wrap: wrap;
-    }
-
-    .playlist-column {
-      flex: 1.4;
-    }
-
-    .form-column {
-      flex: 1;
-      padding: 1rem;
-      border-radius: 1rem;
-      background: #ffffff;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
-    }
-
-    
-    #playlist {
-      padding-left: 2rem;
-      margin:2rem;
-    }
-
-    #playlist li {
-      margin-bottom: 0.25rem;
-    }
-
-    .form-title {
-      margin-top: 0;
-      margin-bottom: 0.5rem;
-      font-size: 1.1rem;
-    }
-
-    .helper-text {
-      margin: 0 0 1rem;
-      font-size: 0.9rem;
-      color: #555;
-    }
-
-.shuffle-btn,
-.add-btn {
-  padding: 0.45rem 0.9rem;
-  border-radius: 999px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  font-weight: 500;
-
-  /* Эхний төрх — өмнөх шигээ */
-  background: #111827;  /* харавтар background */
-  color: #ffffff;       /* цагаан текст */
-  border: 2px solid transparent; /* hover дээр хэмжээс үсрэхгүйн тулд */
-
-  transition:
-    transform 0.05s ease,
-    box-shadow 0.1s ease,
-    background 0.1s ease,
-    color 0.1s ease,
-    border-color 0.1s ease;
-}
-
-.shuffle-btn:hover,
-.add-btn:hover {
-  /* Hover үед зөвхөн өнгөнүүд өөрчлөгдөнө */
-  color: #ff46c8;           /* текст ягаан */
-  border-color: #ff46c8;    /* хүрээ ягаан */
-  background: #111827;      /* background ялгаагүй хэвээр байж болно */
-  box-shadow: 0 4px 12px rgba(255, 70, 200, 0.35);
-  transform: translateY(-1px);
-}
-
-.shuffle-btn:active,
-.add-btn:active {
-  transform: translateY(0);
-  box-shadow: none;
-}
-    .shuffle-btn {
-      margin-top: 0.25rem;
-    }
-
-    .shuffle-btn:hover,
-    .add-btn:hover {
-      background: #1f2937;
-      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.3);
-      transform: translateY(-1px);
-    }
-
-    .shuffle-btn:active,
-    .add-btn:active {
-      transform: translateY(0);
-      box-shadow: none;
-    }
-
-    .add-btn {
-      margin-top: 0.5rem;
-      align-self: flex-start;
-    }
-
-    /* Form layout */
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-
-    .form-row {
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-    }
-
-    label {
-      font-size: 0.85rem;
-      color: #374151;
-    }
-
-    input[type="text"],
-    input[type="number"] {
-      padding: 0.45rem 0.6rem;
-      border-radius: 0.75rem;
-      border: 1px solid #d1d5db;
-      font-size: 0.9rem;
-      background: white;
-    }
-
-    input[type="text"]:focus,
-    input[type="number"]:focus {
-      outline: none;
-      border-color: #111827;
-      box-shadow: 0 0 0 2px rgba(17, 24, 39, 0.1);
-    }
-
-    /* Жижиг дэлгэц дээр нэг багана болгоно */
-    @media (max-width: 768px) {
-      .playlist-card {
-        max-width: 90vw;
-        padding: 1.25rem;
-      }
-
-      .playlist-layout {
-        flex-direction: column;
-      }
-
-      .form-column {
-        width: 100%;
-      }
-    }
-  </style>
 </BaseLayout>

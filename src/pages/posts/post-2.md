@@ -8,10 +8,6 @@ image:
   url:  "/images/7012278.jpeg"
   alt: "Birdy performing live on tour"
 pubDate: "2014-04-24"
-tags:
-  - tour
-  - birdy 
-  - live
 ---
 ## A Standout Night in Cleveland
  

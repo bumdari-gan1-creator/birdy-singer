@@ -9,9 +9,6 @@ image:
   alt: "Birdy performing live on tour"
 pubDate: "2014-05-02"
 tags:
-  - tour
-  - birdy 
-  - live
 ---
 ## Joining the Head or Heart Tour in Orlando
  

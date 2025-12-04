@@ -8,10 +8,6 @@ image:
   url:  "/images/birdy-tour-1.jpg"
   alt: "Birdy performing live on tour"
 pubDate: "2013-04-03"
-tags:
-  - tour
-  - birdy 
-  - live
 ---
 ## Australian Tour Begins in Brisbane
 
