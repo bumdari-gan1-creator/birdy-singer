@@ -3,36 +3,55 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
+  <main class="career-page">
+    <section class="career-section">
+      <h2 class="section-title">Career Highlights</h2>
+      <p>
+        At age 12, Birdy won the UK talent competition <em>Open Mic UK</em>, making her one of the youngest winners.
+        Her breakout came in 2011, when at 14 she released a cover of Skinny Love (originally by Bon Iver), which became a hit across Europe.
+        Since then she has released several studio albums including
+      </p>
 
-  <section>
-    <h2>Career Highlights</h2>
-    <p>
-      At age 12, Birdy won the UK talent competition <em>Open Mic UK</em>, making her one of the youngest winners.
-      Her breakout came in 2011, when at 14 she released a cover of Skinny Love (originally by Bon Iver), which became a hit across Europe.
-      Since then she has released several studio albums including
-    </p>
+      <ul class="albums-list">
+        <li><em>Birdy</em> (2011) — debut album with covers and original songs.</li>
+        <li><em>Fire Within</em> (2013) — her second album showing more original work.</li>
+        <li><em>Beautiful Lies</em> (2016) — explores growth and change.</li>
+        <li><em>Young Heart</em> (2021) — more mature songwriting.</li>
+        <li><em>Portraits</em> (2023) — her latest studio album as of 2023.</li>
+      </ul>
 
-    <ul>
-      <li><em>Birdy</em> (2011) — debut album with covers and original songs.</li>
-      <li><em>Fire Within</em> (2013) — her second album showing more original work.</li>
-      <li><em>Beautiful Lies</em> (2016) — explores growth and change.</li>
-      <li><em>Young Heart</em> (2021) — more mature songwriting.</li>
-      <li><em>Portraits</em> (2023) — her latest studio album as of 2023.</li>
-    </ul>
+      <p>
+        Her music has featured in major film soundtracks, and she has become known for her emotive voice,
+        piano-driven arrangements and thoughtful lyrics.
+      </p>
+    </section>
 
-    <p>
-      Her music has featured in major film soundtracks, and she has become known for her emotive voice,
-      piano-driven arrangements and thoughtful lyrics.
-    </p>
-  </section>
-
-  <section>
-    <h2>Style & Influences</h2>
-    <p>
-      Birdy's style blends indie-folk, pop and piano-led arrangements.
-      Because of her musical upbringing and early classical influences,
-      she often brings a lush, cinematic feel to her songs.
-    </p>
-  </section>
-
+    <section class="career-section">
+      <h2 class="section-title">Style &amp; Influences</h2>
+      <p>
+        Birdy's style blends indie-folk, pop and piano-led arrangements.
+        Because of her musical upbringing and early classical influences,
+        she often brings a lush, cinematic feel to her songs.
+      </p>
+    </section>
+  </main>
 </BaseLayout>
+
+<style>
+   .career-page {
+    max-width: 60vw;
+    margin: 2rem auto 3rem;
+    padding: 0 1.5rem;
+    line-height: 1.7;
+  }
+
+  .career-section {
+    background: #f7f7f7;
+    border-radius: 1rem;
+    padding: 1.5rem 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+    m
