@@ -10,32 +10,33 @@ const { title, location, author, description, image, pubDate, tags } = frontmatt
     <article class="section-card post-article">
       <header class="post-header">
         <h1 class="post-title">{title}</h1>
-
-        <div class="post-meta">
-          {author && (
-            <span class="post-meta-item">
-              Published by: <strong>{author}</strong>
-            </span>
-          )}
-
-          {pubDate && (
-            <span class="post-meta-item">
-              <time datetime={pubDate}>{pubDate}</time>
-            </span>
-          )}
-
-          {location && (
-            <span class="post-meta-item">
-             {location}
-            </span>
-          )}
-        </div>
-
         {description && (
           <p class="post-desc">
             {description}
           </p>
         )}
+
+        <div class="post-meta">
+  {author && (
+    <span class="post-meta-item">
+      Published by: <strong>{author}</strong>
+    </span>
+  )}
+
+  {location && (
+    <span class="post-meta-item">
+      {location}
+    </span>
+  )}
+
+  {pubDate && (
+    <span class="post-meta-item">
+      <time datetime={pubDate}>{pubDate}</time>
+    </span>
+  )}
+</div>
+
+
       </header>
 
       {image?.url && (

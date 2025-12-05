@@ -5,6 +5,7 @@
 
 html,
 body {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -287,13 +288,16 @@ input[type="number"]:focus {
 
 .post-meta {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 0.75rem;
   font-size: 0.9rem;
   color: #777;
   margin-bottom: 0.5rem;
 }
-
+.post-meta-item {
+  display: block;
+}
 
 .post-meta-item:first-child::before {
   content: "";
