@@ -14,11 +14,11 @@ const { title, location, author, description, image, pubDate, tags } = frontmatt
         <div class="post-meta">
           {author && (
             <span class="post-meta-item">
-              Published by <strong>{author}</strong>
+              Published by: <strong>{author}</strong>
             </span>
           )}
 
-          <br>{pubDate && (
+          {pubDate && (
             <span class="post-meta-item">
               <time datetime={pubDate}>{pubDate}</time>
             </span>

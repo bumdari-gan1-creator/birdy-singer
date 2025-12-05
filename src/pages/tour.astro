@@ -1,6 +1,24 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const posts = await Astro.glob("./posts/*.md");
+
+const postModules = import.meta.glob("./posts/*.md", { eager: true });
+
+const posts = Object.entries(postModules).map(([path, module]) => {
+    const slug = path.split("/").pop().replace(".md", "");
+
+  const { title, description, image, pubDate, author, location } =
+    module.frontmatter;
+
+  return {
+    slug,
+    title,
+    description,
+    image,
+    pubDate,
+    author,
+    location,
+  };
+})
 ---
 
 <BaseLayout title="Tour Blog">
@@ -9,15 +27,15 @@ const posts = await Astro.glob("./posts/*.md");
 
     <div class="posts-grid">
       {posts.map((post) => {
-        const { title, description, image, pubDate, author } = post.frontmatter;
+        const href = `/posts/${post.slug}/`;
 
         return (
           <article class="post-card">
-            {image && image.url && (
-              <a href={post.url}>
+            {post.image && post.image.url && (
+              <a href={href}>
                 <img
-                  src={image.url}
-                  alt={image.alt || title}
+                  src={post.image.url}
+                  alt={post.image.alt || post.title}
                   class="post-thumb"
                 />
               </a>
@@ -25,19 +43,15 @@ const posts = await Astro.glob("./posts/*.md");
 
             <div class="post-content">
               <h2>
-                <a href={post.url}>{title}</a>
+                <a href={href}>{post.title}</a>
               </h2>
 
               <p class="post-meta">
-                {pubDate && <time datetime={pubDate}>{pubDate}</time>}
-                {author && <> · {author}</>}
+                {post.pubDate && (
+                  <time datetime={post.pubDate}>{post.pubDate}</time>
+                )}
+                {post.author && <> Published by: {post.author}</>}
               </p>
-
-              {description && (
-                <p class="post-desc">
-                  {description}
-                </p>
-              )}
             </div>
           </article>
         );

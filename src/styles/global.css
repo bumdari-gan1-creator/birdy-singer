@@ -219,8 +219,7 @@ input[type="number"]:focus {
 }
 
 .post-card {
-  border-radius: 0.75rem;
-  overflow: hidden;
+  
   border: 1px solid #e2e2e2;
   background: #fff;
   display: flex;
@@ -228,7 +227,7 @@ input[type="number"]:focus {
 }
 
 .post-thumb {
-  width: 100%;
+  width:100%;
   height: 180px;
   object-fit: cover;
   display: block;
@@ -251,13 +250,13 @@ input[type="number"]:focus {
 }
 
 .post-card h2 a {
-  color: #111827; /* Энгийн үед хар */
+  color: #111827;
   text-decoration: none;
   transition: color 0.15s ease, text-decoration-color 0.15s ease;
 }
 
 .post-card h2 a:hover {
-  color: #ff46c8;       /* Hover үед ягаан */
+  color: #ff46c8;      
   text-decoration: underline;
 }
 
@@ -295,9 +294,6 @@ input[type="number"]:focus {
   margin-bottom: 0.5rem;
 }
 
-.post-meta-item::before {
-  content: "• ";
-}
 
 .post-meta-item:first-child::before {
   content: "";
